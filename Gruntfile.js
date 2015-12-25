@@ -12,7 +12,7 @@ module.exports = function(grunt) {
             },
             angular: {
                 src:  'PATH_TO_JS_FOLDER/src/**/*.js',
-                dest: 'PATH_TO_JS_FOLDER/dist/quattrolineemit.js'
+                dest: 'PATH_TO_JS_FOLDER/dist/alexcomu-dist.js'
             }
         },
         wiredep: {
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
         uglify: {
             build: {
                 files: {
-                    'PATH_TO_JS_FOLDER/dist/quattrolineemit.min.js': ['PATH_TO_JS_FOLDER/dist/quattrolineemit.js']
+                    'PATH_TO_JS_FOLDER/dist/alexcomu-dist.min.js': ['PATH_TO_JS_FOLDER/dist/alexcomu-dist.js']
                 }
             }
         },
@@ -41,14 +41,14 @@ module.exports = function(grunt) {
             },
             all: {
                 src: ['PATH_TO_CSS_FOLDER/src/*.css'],
-                dest: 'PATH_TO_CSS_FOLDER/dist/quattrolineemit.css'
+                dest: 'PATH_TO_CSS_FOLDER/dist/alexcomu-dist.css'
             }
         },
         // take the processed style.css file and minify
         cssmin: {
             build: {
                 files: {
-                    'PATH_TO_CSS_FOLDER/dist/quattrolineemit.min.css': 'PATH_TO_CSS_FOLDER/dist/quattrolineemit.css'
+                    'PATH_TO_CSS_FOLDER/dist/alexcomu-dist.min.css': 'PATH_TO_CSS_FOLDER/dist/alexcomu-dist.css'
                 }
             }
         },
